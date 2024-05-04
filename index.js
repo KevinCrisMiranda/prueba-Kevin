@@ -8,6 +8,8 @@ app.get('/load', (req, res) => {
     res.send(randomNumber.toString());
   });
 
+  app.post('/load', (req,res) =>  res.send('Hola Kevin Server'));
+
 app.listen(app.get('port'), function() {
     console.log('Server on port-'+ process.env.PORT+'-' + process.env.PORTSEC);
   });
